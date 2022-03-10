@@ -1,0 +1,33 @@
+
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-jwt
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  #数据库url
+    url: jdbc:sqlserver://139.9.193.22:6136;DatabaseName=kd_pad
+  # 数据库访问账户
+    username: kduser
+  # 数据库访问密码
+    password: 82281500
+
+config:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长
+    expire: 3600
+    # header 名称
+    header: token
+
+    18: adadd
+    19: 6666
+
+mybatis-plus:
+  #mapper-locations: classpath:mappers/*.xml           #mapper文件路径
+  type-aliases-package: com.padapp.pad.entity       #实体类所在包
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
