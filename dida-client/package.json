@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "dida music client",
   "author": "wu787082055 <787092055@qq.com>",
-  "repository": "",
+  "repository": "https://github.com/wu787082055/dida-music.git",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
